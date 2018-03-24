@@ -1,5 +1,7 @@
 import os
 
+from settings_overrider import override
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '...'
@@ -53,3 +55,10 @@ DATABASES = {
     }
 }
 
+yaml_settings_file = os.path.join('etc', 'settings.yaml')
+
+if os.path.exists(yaml_settings_file):
+    print("Overriding settings from 'etc/settings.yaml' file ...")
+    override(globals(), yaml=yaml_settings_file)
+
+override(globals(), env='DJANGO_')
