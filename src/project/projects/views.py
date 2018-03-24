@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+# @login_required
+# def protected_view(request):
+#     response = HttpResponse()

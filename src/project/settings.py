@@ -20,7 +20,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'project.core'
+    'project.core',
+    'project.auth'
 ]
 
 MIDDLEWARE = [
@@ -55,6 +56,14 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3')
     }
 }
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'project.auth.backends.AccessKeyBackend'
+]
+
+LOGIN_URL = '/access/'
+LOGIN_REDIRECT_URL = '/'
 
 yaml_settings_file = os.path.join('etc', 'settings.yaml')
 

@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+
+{% block title %}
+  Access
+{% endblock %}
+
+{% block content %}
+  <main class="access-form">
+    <form action="{% url 'project_auth:access' %}" method="post">
+      <input type="hidden" name="next" value="{{ next }}" />
+
+      {% csrf_token %}
+      {{ form.non_field_errors }}
+
+      <div class="field">
+        {{ form.access_key.label_tag }}
+        {{ form.access_key }}
+        {{ form.access_key.errors }}
+      </div>
+
+      <div class="actions">
+        <button>Enter</button>
+      </div>
+    </form>
+  </main>
+{% endblock %}
