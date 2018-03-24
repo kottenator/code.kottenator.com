@@ -1,7 +1,7 @@
 .welcome {
   width: 768px;
   margin: 0 auto;
-  padding: 20px 150px;
+  padding: 20px 150px 60px;
   background: url('images/code-icon.svg') no-repeat 30px 6px / 80px;
   box-sizing: border-box;
 }
