@@ -15,6 +15,12 @@ setup(
         'Django~=2.0',
         'settings-overrider~=0.5'
     ],
+    extras_require={
+        'prod': [
+            'uwsgi',
+            'psycopg2-binary'
+        ]
+    },
     classifiers=[
         'Framework :: Django',
         'Intended Audience :: Developers',
