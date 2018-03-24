@@ -11,6 +11,7 @@ ROOT_URLCONF = 'project.urls'
 WSGI_APPLICATION = 'project.wsgi.application'
 TIME_ZONE = 'UTC'
 STATIC_URL = '/static/'
+STATIC_ROOT = 'static'
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -18,7 +19,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles'
+    'django.contrib.staticfiles',
+    'project.core'
 ]
 
 MIDDLEWARE = [
@@ -50,7 +52,7 @@ TEMPLATES = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3')
     }
 }
 

@@ -1,0 +1,21 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.welcome {
+  width: 768px;
+  margin: 0 auto;
+  padding: 20px;
+  background: url('images/code-icon.svg') no-repeat calc(100% - 20px) 20px / 80px;
+  box-sizing: border-box;
+}
+
+.welcome h1 {
+  margin-top: 0;
+}

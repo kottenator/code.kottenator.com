@@ -1,0 +1,25 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Home - {{ block.super }}{% endblock %}
+
+{% block head_content %}
+  <link rel="stylesheet" href="{% static 'core/home_page.css' %}">
+{% endblock %}
+
+{% block content %}
+  <main class="welcome">
+    <h1>
+      Welcome to my code base!
+    </h1>
+    <p>
+      This is a place where I collect & share various code examples. <br>
+      They are accessible only by direct link <em>(sometimes restricted)</em>.
+    </p>
+    <p>
+      If you're on this page - you're either curious or got lost ;) <br>
+      Find me on GitHub & contact if you have any questions.
+    </p>
+  </main>
+{% endblock %}
