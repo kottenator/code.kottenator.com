@@ -1,21 +1,36 @@
-html, body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .welcome {
   width: 768px;
   margin: 0 auto;
-  padding: 20px;
-  background: url('images/code-icon.svg') no-repeat calc(100% - 20px) 20px / 80px;
+  padding: 20px 150px;
+  background: url('images/code-icon.svg') no-repeat 30px 6px / 80px;
   box-sizing: border-box;
 }
 
 .welcome h1 {
   margin-top: 0;
+  line-height: 1.2;
+}
+
+.welcome p {
+  margin: 20px 0 0;
+}
+
+@media (min-width: 769px) {
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    width: auto;
+    padding: 120px 20px 40px;
+    background-position: center 35px;
+  }
 }
