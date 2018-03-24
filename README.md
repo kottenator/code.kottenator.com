@@ -1,2 +1,3 @@
 # code.kottenator.com
-My code experiments for various needs
+
+My code experiments for various needs.
