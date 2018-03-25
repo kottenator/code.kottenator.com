@@ -68,7 +68,7 @@ LOGIN_REDIRECT_URL = '/'
 
 # --------------------------------------- Project settings ----------------------------------------
 
-VAULT_ROOT = 'vault'
+VAULT_BASE_URL = '/vault/'
 
 # -------------------------------------- settings-overrider ---------------------------------------
 yaml_settings_file = os.path.join('etc', 'settings.yaml')
