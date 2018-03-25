@@ -2,10 +2,12 @@ from django.conf import settings
 from django.contrib.auth.views import redirect_to_login
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
+from django.views.decorators.cache import never_cache
 
 from project.projects.models import Project
 
 
+@never_cache
 def project_file(request, project_code, file_path='index.html'):
     project = get_object_or_404(Project, code=project_code)
     user = request.user
