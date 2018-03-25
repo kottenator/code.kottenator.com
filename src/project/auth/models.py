@@ -12,4 +12,4 @@ class AccessKey(models.Model):
     )
 
     def __str__(self):
-        return f'<AccessKey {hide_key(self.key)} - {self.user}>'
+        return f'<AccessKey key:{hide_key(self.key)} user:{self.user}>'
