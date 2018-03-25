@@ -1,0 +1,73 @@
+form .field {
+  display: block;
+  margin: 10px 0;
+}
+
+form label {
+  display: block;
+  font-weight: 300;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  line-height: 24px;
+  color: rgba(0, 0, 0, .7);
+}
+
+form input {
+  display: inline-block;
+  vertical-align: middle;
+  height: 40px;
+  padding: 8px;
+  margin: 0;
+  font: 16px/24px sans-serif;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, .3);
+  border-radius: 2px;
+  transition: box-shadow .2s, border-color .2s;
+}
+
+form input:invalid {
+  border-color: rgba(0, 0, 0, .3);
+  box-shadow: none;
+}
+
+form input:hover {
+  border-color: rgba(0, 0, 0, .6);
+}
+
+form input:focus {
+  box-shadow: 0 0 0 3px rgba(0, 154, 255, 0.5);
+  border-color: rgb(0, 154, 255);
+}
+
+form button {
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  height: 40px;
+  padding: 8px 12px;
+  margin: 0;
+  font: 16px/24px sans-serif;
+  box-sizing: border-box;
+  color: #212121;
+  border: 1px solid rgba(0, 0, 0, .3);
+  background-color: rgba(0, 0, 0, .1);
+  border-radius: 2px;
+  transition: color .2s, border-color .2s, background-color .2s;
+}
+
+form button:hover {
+  border-color: rgba(0, 0, 0, .6);
+  background-color: rgba(0, 0, 0, .15);
+}
+
+.errorlist {
+  margin: 10px 0;
+  padding: 0;
+  display: block;
+  background-color: #eb6565;
+  color: #fff;
+}
+
+.errorlist li {
+  padding: 4px 8px;
+}

@@ -1,0 +1,43 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.access-form {
+  position: relative;
+  width: 768px;
+  margin: 0 auto;
+  padding: 20px 150px 100px;
+  box-sizing: border-box;
+}
+
+.access-form input {
+  width: calc(100% - 95px);
+  margin-right: 5px;
+}
+
+.access-form button {
+  width: 90px;
+}
+
+@media (max-width: 768px) {
+  .access-form {
+    width: 100%;
+    padding: 20px 20px 60px;
+  }
+
+  .access-form input,
+  .access-form button {
+    display: block;
+    width: 100%;
+  }
+
+  .access-form button {
+    margin-top: 10px;
+  }
+}
