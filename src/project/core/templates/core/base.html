@@ -3,9 +3,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{% block title %}Kottenator's Code Base{% endblock %}</title>
   <meta name="robots" content="noindex, nofollow">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <title>{% block title %}Kottenator's Code Base{% endblock %}</title>
+  <link rel="shortcut icon" type="image/png" href="{% static 'core/images/code-icon.png' %}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
   <link rel="stylesheet" href="{% static 'core/normalize.css' %}">
   <link rel="stylesheet" href="{% static 'core/base.css' %}">
   {% block head_content %}{% endblock %}
