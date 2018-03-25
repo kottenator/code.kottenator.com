@@ -66,6 +66,11 @@ AUTHENTICATION_BACKENDS = [
 LOGIN_URL = '/access/'
 LOGIN_REDIRECT_URL = '/'
 
+# --------------------------------------- Project settings ----------------------------------------
+
+VAULT_ROOT = 'vault'
+
+# -------------------------------------- settings-overrider ---------------------------------------
 yaml_settings_file = os.path.join('etc', 'settings.yaml')
 
 if os.path.exists(yaml_settings_file):
