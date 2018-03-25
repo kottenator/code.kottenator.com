@@ -4,7 +4,7 @@ from django.contrib.auth import authenticate
 
 
 class AccessForm(forms.Form):
-    access_key = forms.CharField(widget=forms.TextInput(attrs={'autofocus': ''}))
+    access_key = forms.CharField(widget=forms.PasswordInput(attrs={'autofocus': ''}))
 
     error_messages = {
         'invalid_access_key': "Please enter a correct access key.",
