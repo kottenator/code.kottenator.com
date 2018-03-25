@@ -1,0 +1,48 @@
+.error-message {
+  width: 768px;
+  margin: 0 auto;
+  padding: 20px 150px 60px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.error-message .code {
+  color: #eb6565;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 1.2;
+}
+
+.error-message h1 {
+  margin-top: 0;
+  line-height: 1.2;
+}
+
+.error-message p {
+  margin: 20px 0 0;
+}
+
+@media (min-width: 769px) {
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .error-message .code {
+    position: absolute;
+    left: 70px;
+    top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .error-message {
+    width: auto;
+    padding: 40px 20px;
+  }
+}

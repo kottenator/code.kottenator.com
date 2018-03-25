@@ -1,0 +1,18 @@
+{% extends 'core/base-error-page.html' %}
+
+{% block error_title %}400 Bad Request{% endblock %}
+
+{% block error_message %}
+  <div class="code">
+    400
+  </div>
+  <h1>
+    Bad request
+  </h1>
+  <p>
+    The server couldn't understand the request due to invalid syntax.
+  </p>
+  <p>
+    Find me on GitHub & contact if you think it's a mistake <em>or a bug</em>.
+  </p>
+{% endblock %}
