@@ -1,8 +1,8 @@
 .welcome {
   width: 768px;
   margin: 0 auto;
-  padding: 20px 150px 60px;
-  background: url('images/code-icon.svg') no-repeat 30px 6px / 80px;
+  padding: 20px 160px 60px;
+  background: url('images/code-icon.svg') no-repeat 82px 18px / 50px;
   box-sizing: border-box;
 }
 
@@ -31,6 +31,7 @@
   .welcome {
     width: auto;
     padding: 120px 20px 40px;
+    background-size: 80px;
     background-position: center 35px;
   }
 }
