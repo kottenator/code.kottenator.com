@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='code.kottenator.com',
-    version='0.0.1',
+    version='0.0.2.dev1',
     description='A place to host my code experiments',
     url='https://github.com/kottenator/code.kottenator.com',
     author='Rostyslav Bryzgunov',

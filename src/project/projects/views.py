@@ -20,6 +20,7 @@ def project_file(request, project_code, file_path='index.html'):
     response = HttpResponse()
 
     # The actual file will be served by HTTP server.
+    response['Content-Type'] = ''
     response['X-Accel-Redirect'] = f'{vault_base_url}/{project_code}/{file_path}'
 
     return response
