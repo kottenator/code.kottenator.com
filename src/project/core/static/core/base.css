@@ -1,3 +1,20 @@
 body {
   font: 16px/1.5 'PT Sans', sans-serif;
 }
+
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 8px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.page-header > .title {
+  padding-left: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  margin: 0;
+  background: url('images/code-icon.svg') no-repeat 0 center / 30px;
+}
