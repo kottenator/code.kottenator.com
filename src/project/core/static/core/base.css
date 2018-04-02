@@ -9,12 +9,41 @@ body {
   right: 0;
   padding: 8px 16px;
   border-bottom: 1px solid rgba(0, 0, 0, .1);
+  overflow: hidden;
 }
 
 .page-header > .title {
+  float: left;
   padding-left: 40px;
   font-size: 20px;
   line-height: 40px;
   margin: 0;
   background: url('images/code-icon.svg') no-repeat 0 center / 30px;
+}
+
+.page-header > .logout-link {
+  float: right;
+  color: #212121;
+  line-height: 40px;
+}
+
+.page-header > .logout-link:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    position: static;
+  }
+}
+
+@media (max-width: 359px) {
+  .page-header > .logout-link {
+    width: 40px;
+    height: 40px;
+    margin-right: -8px;
+    overflow: hidden;
+    text-indent: -1000px;
+    background: url('images/logout-icon.svg') no-repeat center / 20px;
+  }
 }
