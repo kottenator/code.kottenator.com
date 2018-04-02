@@ -26,6 +26,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .page-header {
+    position: fixed;
+  }
+
   .access-form {
     width: 100%;
     padding: 20px 20px 60px;
