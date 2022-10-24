@@ -2,3 +2,6 @@
 /src/*.egg-info/
 /db.sqlite3
 /static/
+/vault/
+/etc/settings.yaml
+/var/

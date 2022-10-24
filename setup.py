@@ -13,7 +13,7 @@ setup(
     scripts=['bin/manage.py'],
     install_requires=[
         'Django~=2.0',
-        'settings-overrider~=0.5'
+        'settings-overrider~=1.0'
     ],
     extras_require={
         'prod': [
